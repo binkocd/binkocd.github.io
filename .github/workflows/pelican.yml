@@ -12,4 +12,4 @@ jobs:
       id-token: "write"
     with:
       settings: "publishconf.py"
-      python_version: "3.12"
+      python: "3.12"
