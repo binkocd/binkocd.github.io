@@ -8,7 +8,7 @@ TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = 'en'
 
-THEME = 'pelican-themes/dev-random2'
+THEME = '/pelican-themes/dev-random2'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
