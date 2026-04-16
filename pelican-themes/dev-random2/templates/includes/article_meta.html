@@ -1,7 +1,7 @@
 <!-- includes/article_meta.html -->
-            Le <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-            dans «<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>» 
-            par <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+            Published on <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+            in "<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>" 
+            by <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
             {%- if article.tags %}
               <br />Tags: 
               {%- for tag in article.tags %}
@@ -9,7 +9,7 @@
               {% endfor -%}
             {% endif -%}
             {%- if article.translations %}
-              <br />Langues: 
+              <br />Languages: 
               [<a href="{{ SITEURL }}/{{ article.url }}">{{ article.lang or DEFAULT_LANG }}</a>]
               {%- for translation in article.translations %}
               <a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.lang }}</a>

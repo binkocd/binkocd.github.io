@@ -7,6 +7,7 @@ PATH = "content"
 TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = 'en'
+LOCALE = 'en_US.UTF-8'
 
 THEME = 'pelican-themes/dev-random2'
 
