@@ -15,7 +15,7 @@
         <h1>
           <a rel="bookmark"
              href="{{ SITEURL }}/{{ article.url }}"
-             title="Lien permanent vers «{{ article.title|striptags }}»">
+             title="Permanent link to '{{ article.title|striptags }}'">
              {{ article.title }}
           </a>
         </h1>
@@ -28,8 +28,8 @@
       </div>
       <footer class="post-footer">
         <div class="meta">
-            Posté dans «<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>» 
-            par <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author}}</a><br />
+            Posted in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+            by <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author}}</a><br />
             Tags: {% for tag in article.tags %} #<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}
         </div>
       </footer>
